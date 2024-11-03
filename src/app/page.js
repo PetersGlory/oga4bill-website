@@ -1,76 +1,22 @@
+import FAQs from "@/components/common/FAQs";
+import Footer from "@/components/common/Footer";
+import Navbar from "@/components/common/Navbar";
+import Hero from "@/components/Home/Hero";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex relative flex-col pt-8 w-full rounded-none min-h-[5108px] max-md:max-w-full">
+    <div className="flex relative flex-col pt-8 w-full rounded-none min-h-full max-md:max-w-full">
       <img
         loading="lazy"
         src="https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/3f6f31338dd2a94cb6c1bb2886409a4d3fa699e12eecd3fdb4764b8b521a449e?apiKey=5fa524da69784606825bdce1461219fa&"
         className="object-cover absolute inset-0 size-full"
       />
       <div className="flex relative flex-col items-center w-full max-md:max-w-full">
-        <div className="flex flex-wrap gap-10 justify-between items-center max-w-full w-[1240px]">
-          <div className="flex gap-3 justify-center items-center self-stretch my-auto w-[150px]">
-            <img
-              loading="lazy"
-              srcSet="https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/861d34da538a784f1f4c70c9d46e08982c5a3a886ac50d0c0bd2dd308c4c22c3?apiKey=5fa524da69784606825bdce1461219fa&width=100 100w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/861d34da538a784f1f4c70c9d46e08982c5a3a886ac50d0c0bd2dd308c4c22c3?apiKey=5fa524da69784606825bdce1461219fa&width=200 200w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/861d34da538a784f1f4c70c9d46e08982c5a3a886ac50d0c0bd2dd308c4c22c3?apiKey=5fa524da69784606825bdce1461219fa&width=400 400w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/861d34da538a784f1f4c70c9d46e08982c5a3a886ac50d0c0bd2dd308c4c22c3?apiKey=5fa524da69784606825bdce1461219fa&width=800 800w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/861d34da538a784f1f4c70c9d46e08982c5a3a886ac50d0c0bd2dd308c4c22c3?apiKey=5fa524da69784606825bdce1461219fa&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/861d34da538a784f1f4c70c9d46e08982c5a3a886ac50d0c0bd2dd308c4c22c3?apiKey=5fa524da69784606825bdce1461219fa&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/861d34da538a784f1f4c70c9d46e08982c5a3a886ac50d0c0bd2dd308c4c22c3?apiKey=5fa524da69784606825bdce1461219fa&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/861d34da538a784f1f4c70c9d46e08982c5a3a886ac50d0c0bd2dd308c4c22c3?apiKey=5fa524da69784606825bdce1461219fa&"
-              className="object-contain self-stretch my-auto aspect-[2.83] w-[150px]"
-            />
-          </div>
-          <div className="flex gap-8 justify-center items-center self-stretch my-auto text-base font-medium text-white min-w-[240px] max-md:max-w-full">
-            <div className="self-stretch my-auto">Why Us</div>
-            <div className="self-stretch my-auto">Services</div>
-            <div className="self-stretch my-auto">Our Process</div>
-            <div className="self-stretch my-auto">Payments</div>
-            <div className="self-stretch my-auto">FAQs</div>
-          </div>
-          <div className="gap-2.5 self-stretch px-8 py-3 my-auto text-base font-bold text-green-600 border-2 border-green-600 border-solid rounded-[64px] max-md:px-5">
-            Download Now
-          </div>
-        </div>
-        <div className="flex flex-wrap gap-8 items-start mt-32 max-w-full w-[1240px] max-md:mt-10">
-          <div className="flex relative flex-col grow shrink items-start min-w-[240px] w-[483px] max-md:max-w-full">
-            <div className="z-0 self-stretch text-6xl font-bold tracking-tighter text-white leading-[64px] max-md:max-w-full max-md:text-4xl max-md:leading-[51px]">
-              Discover the Perfect Credit Card for You
-            </div>
-            <div className="z-0 self-stretch mt-8 text-lg leading-6 text-zinc-400 max-md:max-w-full">
-              Discover the power of our secure and rewarding credit cards.
-              Explore our range of credit cards and take control of your
-              finances today.
-            </div>
-            <div className="flex z-0 gap-4 items-center px-8 py-4 mt-8 text-base font-medium text-white bg-green-600 rounded-[64px] max-md:px-5">
-              <div className="self-stretch my-auto">Get Started</div>
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/66e1edd2ed756193d4e684f174cc707562fd88ac435a0dd427d62d07765bf24e?apiKey=5fa524da69784606825bdce1461219fa&"
-                className="object-contain shrink-0 self-stretch my-auto aspect-[1.35] w-[23px]"
-              />
-            </div>
-            <div className="flex z-0 gap-4 items-center mt-8">
-              <img
-                loading="lazy"
-                srcSet="https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/8143e83479a57a41ffa03cb754ca2cafa0001e27a46836637c7e29c03650feb3?apiKey=5fa524da69784606825bdce1461219fa&width=100 100w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/8143e83479a57a41ffa03cb754ca2cafa0001e27a46836637c7e29c03650feb3?apiKey=5fa524da69784606825bdce1461219fa&width=200 200w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/8143e83479a57a41ffa03cb754ca2cafa0001e27a46836637c7e29c03650feb3?apiKey=5fa524da69784606825bdce1461219fa&width=400 400w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/8143e83479a57a41ffa03cb754ca2cafa0001e27a46836637c7e29c03650feb3?apiKey=5fa524da69784606825bdce1461219fa&width=800 800w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/8143e83479a57a41ffa03cb754ca2cafa0001e27a46836637c7e29c03650feb3?apiKey=5fa524da69784606825bdce1461219fa&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/8143e83479a57a41ffa03cb754ca2cafa0001e27a46836637c7e29c03650feb3?apiKey=5fa524da69784606825bdce1461219fa&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/8143e83479a57a41ffa03cb754ca2cafa0001e27a46836637c7e29c03650feb3?apiKey=5fa524da69784606825bdce1461219fa&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/8143e83479a57a41ffa03cb754ca2cafa0001e27a46836637c7e29c03650feb3?apiKey=5fa524da69784606825bdce1461219fa&"
-                className="object-contain shrink-0 gap-0 self-stretch my-auto aspect-[2.5] w-[120px]"
-              />
-              <div className="flex flex-col self-stretch my-auto w-[177px]">
-                <div className="text-base font-bold text-white">10.2k+</div>
-                <div className="text-xs leading-4 text-zinc-400">
-                  Active users around the wordls
-                </div>
-              </div>
-            </div>
-            <img
-              loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/7c991b7ecdccec44d3cfc6c3c61de2ec820f12043104e9032b8462f374c4f4e5?apiKey=5fa524da69784606825bdce1461219fa&"
-              className="object-contain absolute -left-2.5 z-0 max-w-full aspect-[3.58] h-[100px] top-[62px] w-[359px]"
-            />
-          </div>
-          <div className="flex flex-col grow shrink items-start min-w-[240px] w-[483px] max-md:max-w-full">
-            <div className="flex flex-col items-end px-20 pt-12 max-w-full rounded-none w-[793px] max-md:pl-5">
-              <div className="flex shrink-0 max-w-full bg-green-600 rounded-full h-[492px] w-[419px]" />
-            </div>
-          </div>
-        </div>
+        <Navbar />
+
+        <Hero />
+
         <div className="flex flex-wrap items-start p-16 mt-32 bg-gray-700 bg-opacity-20 rounded-[32px] max-md:px-5 max-md:mt-10 max-md:max-w-full">
           <div className="flex flex-col justify-center items-center min-w-[240px] w-[278px]">
             <div className="text-5xl font-bold tracking-tight leading-none text-white max-md:text-4xl">
@@ -105,6 +51,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+
         <div className="flex flex-wrap gap-10 justify-between items-start mt-32 max-w-full w-[1240px] max-md:mt-10">
           <img
             loading="lazy"
@@ -137,6 +84,8 @@ export default function Home() {
             className="object-contain shrink-0 aspect-[3.15] w-[101px]"
           />
         </div>
+
+
         <div className="flex flex-col items-center mt-32 max-md:mt-10 max-md:max-w-full">
           <div className="text-4xl font-bold text-white">What do we offer?</div>
           <div className="flex flex-wrap gap-8 items-start mt-16 max-md:mt-10 max-md:max-w-full">
@@ -191,6 +140,8 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+
         <div className="flex flex-col mt-32 max-w-full w-[1240px] max-md:mt-10">
           <div className="pb-7 w-full rounded-none">
             <div className="flex gap-5 max-md:flex-col">
@@ -220,6 +171,8 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+
         <div className="flex flex-col mt-32 max-w-full w-[1240px] max-md:mt-10">
           <div className="flex flex-wrap gap-8 items-center w-full">
             <div className="flex flex-col grow shrink self-stretch px-7 pb-5 my-auto rounded-none min-w-[240px] w-[483px] max-md:px-5 max-md:max-w-full">
@@ -279,6 +232,8 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+
         <div className="flex flex-wrap gap-8 justify-center items-start mt-32 max-w-full w-[1240px] max-md:mt-10">
           <div className="flex flex-col grow shrink items-start px-6 py-12 bg-zinc-800 bg-opacity-20 min-w-[240px] rounded-[32px] w-[314px] max-md:px-5">
             <div className="flex gap-2.5 items-center p-4 w-14 h-14 bg-gray-700 rounded-[56px]">
@@ -368,214 +323,12 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center mt-32 max-w-full w-[1020px] max-md:mt-10">
-          <div className="text-4xl font-bold text-white">FAQs</div>
-          <div className="flex flex-col mt-16 w-full max-md:mt-10">
-            <div className="flex flex-col pb-4 w-full border-b-2 border-zinc-400 max-md:max-w-full">
-              <div className="flex flex-wrap gap-10 justify-between items-center w-full text-2xl font-bold leading-none text-white max-md:max-w-full">
-                <div className="self-stretch my-auto max-md:max-w-full">
-                  What credit score do I need to apply for a credit card?
-                </div>
-                <div className="flex shrink-0 self-stretch my-auto w-4 bg-white h-[3px]" />
-              </div>
-              <div className="mt-4 text-base leading-6 text-zinc-400 max-md:max-w-full">
-                The required credit score may vary depending on the specific
-                credit card. Generally, a good to excellent credit score
-                (typically 670 or above) increases your chances of approval for
-                premium credit cards.
-              </div>
-            </div>
-            <div className="flex flex-col pb-4 mt-6 w-full text-2xl font-bold leading-none text-white border-b-2 border-zinc-400 max-md:max-w-full">
-              <div className="flex flex-wrap gap-10 justify-between items-center w-full max-md:max-w-full">
-                <div className="self-stretch my-auto max-md:max-w-full">
-                  {" "}
-                  How can I apply for a credit card online?
-                </div>
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/58004f6bb119bb4d3d98f43704d0d5cb63b405e3ccb084de2d0a77e30255b48a?apiKey=5fa524da69784606825bdce1461219fa&"
-                  className="object-contain shrink-0 self-stretch my-auto w-4 aspect-square"
-                />
-              </div>
-            </div>
-            <div className="flex flex-col pb-4 mt-6 w-full text-2xl font-bold leading-none text-white border-b-2 border-zinc-400 max-md:max-w-full">
-              <div className="flex flex-wrap gap-10 justify-between items-center w-full max-md:max-w-full">
-                <div className="self-stretch my-auto max-md:max-w-full">
-                  Are there any annual fees associated with the credit card?
-                </div>
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/58004f6bb119bb4d3d98f43704d0d5cb63b405e3ccb084de2d0a77e30255b48a?apiKey=5fa524da69784606825bdce1461219fa&"
-                  className="object-contain shrink-0 self-stretch my-auto w-4 aspect-square"
-                />
-              </div>
-            </div>
-            <div className="flex flex-col pb-4 mt-6 w-full text-2xl font-bold leading-none text-white border-b-2 border-zinc-400 max-md:max-w-full">
-              <div className="flex flex-wrap gap-10 justify-between items-center w-full max-md:max-w-full">
-                <div className="self-stretch my-auto max-md:max-w-full">
-                  How long does it take to receive the credit card once
-                  approved?
-                </div>
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/58004f6bb119bb4d3d98f43704d0d5cb63b405e3ccb084de2d0a77e30255b48a?apiKey=5fa524da69784606825bdce1461219fa&"
-                  className="object-contain shrink-0 self-stretch my-auto w-4 aspect-square"
-                />
-              </div>
-            </div>
-            <div className="flex flex-col pb-4 mt-6 w-full text-2xl font-bold leading-none text-white border-b-2 border-zinc-400 max-md:max-w-full">
-              <div className="flex flex-wrap gap-10 justify-between items-center w-full max-md:max-w-full">
-                <div className="self-stretch my-auto max-md:max-w-full">
-                  {" "}
-                  How can I check my credit card balance and transactions?
-                </div>
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/58004f6bb119bb4d3d98f43704d0d5cb63b405e3ccb084de2d0a77e30255b48a?apiKey=5fa524da69784606825bdce1461219fa&"
-                  className="object-contain shrink-0 self-stretch my-auto w-4 aspect-square"
-                />
-              </div>
-            </div>
-            <div className="flex flex-col pb-4 mt-6 w-full text-2xl font-bold leading-none text-white border-b-2 border-zinc-400 max-md:max-w-full">
-              <div className="flex flex-wrap gap-10 justify-between items-center w-full max-md:max-w-full">
-                <div className="self-stretch my-auto max-md:max-w-full">
-                  {" "}
-                  What should I do if my credit card is lost or stolen?
-                </div>
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/58004f6bb119bb4d3d98f43704d0d5cb63b405e3ccb084de2d0a77e30255b48a?apiKey=5fa524da69784606825bdce1461219fa&"
-                  className="object-contain shrink-0 self-stretch my-auto w-4 aspect-square"
-                />
-              </div>
-            </div>
-            <div className="flex flex-col pb-4 mt-6 w-full text-2xl font-bold leading-none text-white border-b-2 border-zinc-400 max-md:max-w-full">
-              <div className="flex flex-wrap gap-10 justify-between items-center w-full max-md:max-w-full">
-                <div className="self-stretch my-auto max-md:max-w-full">
-                  Is my credit card information secure?
-                </div>
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/58004f6bb119bb4d3d98f43704d0d5cb63b405e3ccb084de2d0a77e30255b48a?apiKey=5fa524da69784606825bdce1461219fa&"
-                  className="object-contain shrink-0 self-stretch my-auto w-4 aspect-square"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="flex flex-col mt-32 w-full max-md:mt-10 max-md:max-w-full">
-          <div className="self-center w-full max-w-[1240px] max-md:max-w-full">
-            <div className="flex gap-5 max-md:flex-col">
-              <div className="flex flex-col w-[67%] max-md:ml-0 max-md:w-full">
-                <div className="flex gap-4 items-start self-stretch my-auto mr-0 rounded-[48px] max-md:mt-10 max-md:max-w-full">
-                  <div className="flex flex-col min-w-[240px] w-[605px]">
-                    <div className="flex flex-col items-start pr-20 w-full rounded-none max-md:pr-5">
-                      <div className="text-5xl font-bold tracking-tight text-white leading-[56px] max-md:max-w-full max-md:text-4xl max-md:leading-[52px]">
-                        Easy Way to manage your finances
-                      </div>
-                      <div className="mt-5 text-lg tracking-tight leading-none text-zinc-400 max-md:max-w-full">
-                        Easy to use mobile app that support on android and ios.
-                      </div>
-                    </div>
-                    <div className="flex gap-6 items-start self-start mt-8">
-                      <div className="flex flex-col justify-center p-4 bg-gray-700 rounded-2xl w-[155px]">
-                        <img
-                          loading="lazy"
-                          src="https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/529152a06978075070ede34ab400e3af0a09f80a52b982cc0313be44d9bad8e5?apiKey=5fa524da69784606825bdce1461219fa&"
-                          className="object-contain max-w-full aspect-[3.85] w-[123px]"
-                        />
-                      </div>
-                      <div className="flex flex-col justify-center p-4 bg-gray-700 rounded-2xl w-[170px]">
-                        <img
-                          loading="lazy"
-                          src="https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/36b39a7bee48aa071645516d1e95b3f271738b59a781f2887a18c2071804dff2?apiKey=5fa524da69784606825bdce1461219fa&"
-                          className="object-contain max-w-full aspect-[4.31] w-[138px]"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
-                <img
-                  loading="lazy"
-                  srcSet="https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/30ce41667d1b3343bc61be069d3d8ddedd142fd98207f5da468f2e64a7dfd6f2?apiKey=5fa524da69784606825bdce1461219fa&width=100 100w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/30ce41667d1b3343bc61be069d3d8ddedd142fd98207f5da468f2e64a7dfd6f2?apiKey=5fa524da69784606825bdce1461219fa&width=200 200w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/30ce41667d1b3343bc61be069d3d8ddedd142fd98207f5da468f2e64a7dfd6f2?apiKey=5fa524da69784606825bdce1461219fa&width=400 400w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/30ce41667d1b3343bc61be069d3d8ddedd142fd98207f5da468f2e64a7dfd6f2?apiKey=5fa524da69784606825bdce1461219fa&width=800 800w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/30ce41667d1b3343bc61be069d3d8ddedd142fd98207f5da468f2e64a7dfd6f2?apiKey=5fa524da69784606825bdce1461219fa&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/30ce41667d1b3343bc61be069d3d8ddedd142fd98207f5da468f2e64a7dfd6f2?apiKey=5fa524da69784606825bdce1461219fa&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/30ce41667d1b3343bc61be069d3d8ddedd142fd98207f5da468f2e64a7dfd6f2?apiKey=5fa524da69784606825bdce1461219fa&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/30ce41667d1b3343bc61be069d3d8ddedd142fd98207f5da468f2e64a7dfd6f2?apiKey=5fa524da69784606825bdce1461219fa&"
-                  className="object-contain grow w-full aspect-[1.28] max-md:max-w-full"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col px-20 pt-16 pb-9 w-full bg-zinc-800 bg-opacity-20 max-md:px-5 max-md:max-w-full">
-            <div className="flex flex-col max-md:max-w-full">
-              <div className="flex flex-wrap gap-8 items-center max-md:max-w-full">
-                <div className="flex flex-col self-stretch my-auto min-h-[176px] min-w-[240px] w-[392px]">
-                  <div className="flex gap-3 justify-center items-center self-start text-xl font-bold tracking-tight leading-tight text-white whitespace-nowrap">
-                    <img
-                      loading="lazy"
-                      srcSet="https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/861d34da538a784f1f4c70c9d46e08982c5a3a886ac50d0c0bd2dd308c4c22c3?apiKey=5fa524da69784606825bdce1461219fa&width=100 100w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/861d34da538a784f1f4c70c9d46e08982c5a3a886ac50d0c0bd2dd308c4c22c3?apiKey=5fa524da69784606825bdce1461219fa&width=200 200w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/861d34da538a784f1f4c70c9d46e08982c5a3a886ac50d0c0bd2dd308c4c22c3?apiKey=5fa524da69784606825bdce1461219fa&width=400 400w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/861d34da538a784f1f4c70c9d46e08982c5a3a886ac50d0c0bd2dd308c4c22c3?apiKey=5fa524da69784606825bdce1461219fa&width=800 800w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/861d34da538a784f1f4c70c9d46e08982c5a3a886ac50d0c0bd2dd308c4c22c3?apiKey=5fa524da69784606825bdce1461219fa&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/861d34da538a784f1f4c70c9d46e08982c5a3a886ac50d0c0bd2dd308c4c22c3?apiKey=5fa524da69784606825bdce1461219fa&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/861d34da538a784f1f4c70c9d46e08982c5a3a886ac50d0c0bd2dd308c4c22c3?apiKey=5fa524da69784606825bdce1461219fa&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/861d34da538a784f1f4c70c9d46e08982c5a3a886ac50d0c0bd2dd308c4c22c3?apiKey=5fa524da69784606825bdce1461219fa&"
-                      className="object-contain self-stretch my-auto aspect-[2.83] w-[150px]"
-                    />
-                  </div>
-                  <div className="mt-2.5 text-base tracking-tight leading-6 text-zinc-400">
-                    Discover the power of our secure and rewarding credit cards
-                  </div>
-                </div>
-                <div className="flex flex-wrap gap-8 items-start self-stretch my-auto text-base min-w-[240px] w-[816px] max-md:max-w-full">
-                  <div className="flex flex-col w-[180px]">
-                    <div className="font-bold text-white">About us</div>
-                    <div className="flex flex-col mt-4 w-full text-zinc-400">
-                      <div>Investors</div>
-                      <div className="mt-2">Features</div>
-                      <div className="mt-2">Book a demo</div>
-                      <div className="mt-2">Security </div>
-                    </div>
-                  </div>
-                  <div className="flex flex-col flex-1 shrink basis-0">
-                    <div className="font-bold text-white">Products</div>
-                    <div className="flex flex-col mt-4 w-full text-zinc-400">
-                      <div>Credits Cards</div>
-                      <div className="mt-2">Gift Cards</div>
-                      <div className="mt-2">Savings accounts</div>
-                      <div className="mt-2">NFT</div>
-                    </div>
-                  </div>
-                  <div className="flex flex-col w-[180px]">
-                    <div className="font-bold text-white">Useful Links</div>
-                    <div className="flex flex-col mt-4 w-full text-zinc-400">
-                      <div>Free rewards</div>
-                      <div className="mt-2">Documentation</div>
-                      <div className="mt-2">Affiliate program</div>
-                    </div>
-                  </div>
-                  <div className="flex flex-col w-[180px]">
-                    <div className="font-bold text-white">Social</div>
-                    <div className="flex flex-col mt-4 w-full text-zinc-400">
-                      <div>Changelog</div>
-                      <div className="mt-2">License</div>
-                      <div className="mt-2">Site Maps</div>
-                      <div className="mt-2">News</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-wrap gap-10 justify-between items-center mt-20 w-full text-xs leading-loose max-w-[1240px] text-zinc-400 max-md:mt-10 max-md:max-w-full">
-                <div className="self-stretch my-auto">
-                  copyright 2023 DoraDesign All Rights Reserved
-                </div>
-                <div className="flex self-stretch my-auto min-w-[240px] w-[289px]">
-                  <div className="flex-auto mr-0">
-                    This page uses cookies. See cookies details here{" "}
-                  </div>
-                  <img
-                    loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/cc51de1560cd278c2aceac0a9ced046202fadd58e630d01e597a8e8ac1b10064?apiKey=5fa524da69784606825bdce1461219fa&"
-                    className="object-contain shrink-0 self-start mt-4 w-7 aspect-[27.78]"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
+
+        <FAQs />
+
+
+        <Footer />
       </div>
     </div>
   );
