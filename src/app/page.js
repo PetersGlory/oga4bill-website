@@ -1,7 +1,9 @@
 import FAQs from "@/components/common/FAQs";
 import Footer from "@/components/common/Footer";
 import Navbar from "@/components/common/Navbar";
+import Testimonial from "@/components/common/Testimonial";
 import Hero from "@/components/Home/Hero";
+import WhatweOffer from "@/components/Home/WhatweOffer";
 import Image from "next/image";
 
 export default function Home() {
@@ -86,60 +88,7 @@ export default function Home() {
         </div>
 
 
-        <div className="flex flex-col items-center mt-32 max-md:mt-10 max-md:max-w-full">
-          <div className="text-4xl font-bold text-white">What do we offer?</div>
-          <div className="flex flex-wrap gap-8 items-start mt-16 max-md:mt-10 max-md:max-w-full">
-            <div className="flex gap-6 items-start min-w-[240px] w-[392px]">
-              <div className="flex overflow-hidden gap-2.5 items-center p-4 w-16 h-16 bg-gray-700 rounded-3xl">
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/b3a1ef29de6bae20556d810da942273793e347edce2a8829503e3b75c492baef?apiKey=5fa524da69784606825bdce1461219fa&"
-                  className="object-contain w-8 aspect-square"
-                />
-              </div>
-              <div className="flex flex-col flex-1 shrink basis-8 min-w-[240px]">
-                <div className="text-2xl font-medium text-white">
-                  Security Guarantee{" "}
-                </div>
-                <div className="mt-2 text-base text-zinc-400">
-                  Your data and funds will be securely protected.
-                </div>
-              </div>
-            </div>
-            <div className="flex gap-6 items-start min-w-[240px] w-[392px]">
-              <div className="flex overflow-hidden gap-2.5 items-center p-4 w-16 h-16 bg-gray-700 rounded-3xl">
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/c7769bc789b4044ed76c53fee09c186f4a58cf0926cfdd76ece03ddbe0d357a4?apiKey=5fa524da69784606825bdce1461219fa&"
-                  className="object-contain w-8 aspect-square"
-                />
-              </div>
-              <div className="flex flex-col flex-1 shrink basis-8 min-w-[240px]">
-                <div className="text-2xl font-medium text-white">Investing</div>
-                <div className="mt-2 text-base text-zinc-400">
-                  Your data and funds will be securely protected.
-                </div>
-              </div>
-            </div>
-            <div className="flex gap-6 items-start min-w-[240px] w-[392px]">
-              <div className="flex overflow-hidden gap-2.5 items-center p-4 w-16 h-16 bg-gray-700 rounded-3xl">
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/ce6cf143b65b665c63059acc2892673fb398323c2774bae62b62977d5d6bd257?apiKey=5fa524da69784606825bdce1461219fa&"
-                  className="object-contain w-8 aspect-square"
-                />
-              </div>
-              <div className="flex flex-col flex-1 shrink basis-8 min-w-[240px]">
-                <div className="text-2xl font-medium text-white">
-                  Multiple Method
-                </div>
-                <div className="mt-2 text-base text-zinc-400">
-                  Your data and funds will be securely protected.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <WhatweOffer />
 
 
         <div className="flex flex-col mt-32 max-w-full w-[1240px] max-md:mt-10">
@@ -148,15 +97,16 @@ export default function Home() {
               <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
                 <div className="flex flex-col self-stretch my-auto w-full text-base text-white max-md:mt-10 max-md:-mr-4 max-md:max-w-full">
                   <div className="text-4xl font-bold max-md:max-w-full">
-                    Design your personalized credit card.
+                    Streamline your bill payments with our convenient solution.
                   </div>
                   <div className="mt-6 leading-6 text-zinc-400 max-md:max-w-full">
-                    You have the freedom to personalize the design of your
-                    credit card, ensuring a truly unique experience that makes
-                    you feel extraordinary
+                    Take the hassle out of managing your finances with our innovative solution designed to simplify 
+                    your bill payments. Enjoy a seamless experience as you effortlessly track, organize, and pay your 
+                    bills all in one place. Say goodbye to late fees and missed payments, and embrace the convenience 
+                    of stress-free budgeting today!
                   </div>
                   <div className="flex gap-4 items-center self-start px-8 py-4 mt-6 font-medium bg-green-600 rounded-[64px] max-md:px-5">
-                    <div className="self-stretch my-auto">Create New Card</div>
+                    <div className="self-stretch my-auto">Get The App</div>
                     <img
                       loading="lazy"
                       src="https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/66e1edd2ed756193d4e684f174cc707562fd88ac435a0dd427d62d07765bf24e?apiKey=5fa524da69784606825bdce1461219fa&"
@@ -166,7 +116,13 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
-                <div className="flex shrink-0 mx-auto max-w-full bg-white bg-opacity-10 h-[492px] rounded-[37px] w-[643px]" />
+                <div className="flex smx-auto max-w-full bg-white bg-opacity-10 h-[492px] rounded-[37px] w-[643px]">
+                  <img 
+                    src="assets/img/welcome.png"
+                    classname="w-full md:w-[421px] h-[620px]"
+                    alt="welcome"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -174,7 +130,7 @@ export default function Home() {
 
 
         <div className="flex flex-col mt-32 max-w-full w-[1240px] max-md:mt-10">
-          <div className="flex flex-wrap gap-8 items-center w-full">
+          <div className="flex flex-wrap gap-8 justify-center items-center w-full">
             <div className="flex flex-col grow shrink self-stretch px-7 pb-5 my-auto rounded-none min-w-[240px] w-[483px] max-md:px-5 max-md:max-w-full">
               <div className="flex z-10 flex-col items-start px-11 py-8 max-w-full bg-white bg-opacity-10 rounded-[35px] w-[421px] max-md:px-5">
                 <div className="flex gap-5 justify-between self-stretch">
@@ -233,97 +189,7 @@ export default function Home() {
           </div>
         </div>
 
-
-        <div className="flex flex-wrap gap-8 justify-center items-start mt-32 max-w-full w-[1240px] max-md:mt-10">
-          <div className="flex flex-col grow shrink items-start px-6 py-12 bg-zinc-800 bg-opacity-20 min-w-[240px] rounded-[32px] w-[314px] max-md:px-5">
-            <div className="flex gap-2.5 items-center p-4 w-14 h-14 bg-gray-700 rounded-[56px]">
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/79aa8438ba3bae8eaac06f438702c2bdf465c0c54a9e84593d9328f9737dccad?apiKey=5fa524da69784606825bdce1461219fa&"
-                className="object-contain w-6 aspect-square"
-              />
-            </div>
-            <div className="self-stretch mt-8 text-base leading-6 text-white">
-              &quot;Great session! Dani was super helpful. She shared some
-              practical advice on how can lorem ip we go about refining our
-              service offerings.&quot;
-            </div>
-            <div className="flex gap-2 justify-center items-start mt-8">
-              <img
-                loading="lazy"
-                srcSet="https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/e2c77a9f50a01c0f553b3df59a0012a14797563d7b808ffc2af0588314a094b3?apiKey=5fa524da69784606825bdce1461219fa&width=100 100w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/e2c77a9f50a01c0f553b3df59a0012a14797563d7b808ffc2af0588314a094b3?apiKey=5fa524da69784606825bdce1461219fa&width=200 200w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/e2c77a9f50a01c0f553b3df59a0012a14797563d7b808ffc2af0588314a094b3?apiKey=5fa524da69784606825bdce1461219fa&width=400 400w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/e2c77a9f50a01c0f553b3df59a0012a14797563d7b808ffc2af0588314a094b3?apiKey=5fa524da69784606825bdce1461219fa&width=800 800w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/e2c77a9f50a01c0f553b3df59a0012a14797563d7b808ffc2af0588314a094b3?apiKey=5fa524da69784606825bdce1461219fa&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/e2c77a9f50a01c0f553b3df59a0012a14797563d7b808ffc2af0588314a094b3?apiKey=5fa524da69784606825bdce1461219fa&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/e2c77a9f50a01c0f553b3df59a0012a14797563d7b808ffc2af0588314a094b3?apiKey=5fa524da69784606825bdce1461219fa&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/e2c77a9f50a01c0f553b3df59a0012a14797563d7b808ffc2af0588314a094b3?apiKey=5fa524da69784606825bdce1461219fa&"
-                className="object-contain shrink-0 w-12 rounded-full aspect-square"
-              />
-              <div className="flex flex-col">
-                <div className="text-base font-medium tracking-tight text-white">
-                  Hadid Khan
-                </div>
-                <div className="text-xs leading-loose text-zinc-400">
-                  UIUX Designer
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col grow shrink items-start px-6 py-12 bg-zinc-800 bg-opacity-20 min-w-[240px] rounded-[32px] w-[314px] max-md:px-5">
-            <div className="flex gap-2.5 items-center p-4 w-14 h-14 bg-gray-700 rounded-[56px]">
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/79aa8438ba3bae8eaac06f438702c2bdf465c0c54a9e84593d9328f9737dccad?apiKey=5fa524da69784606825bdce1461219fa&"
-                className="object-contain w-6 aspect-square"
-              />
-            </div>
-            <div className="self-stretch mt-8 text-base leading-6 text-white">
-              &quot;It's is both attractive and highly adaptable. It's exactly
-              what I've been looking forefinitely wo lorem ipsum dolorth the
-              investment.&quot;
-            </div>
-            <div className="flex gap-2 justify-center items-start mt-8">
-              <img
-                loading="lazy"
-                srcSet="https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/d5a6d3ffd80300051e7685ae3f6a4a5cfc36a6097c9d8c224887a435216f2e01?apiKey=5fa524da69784606825bdce1461219fa&width=100 100w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/d5a6d3ffd80300051e7685ae3f6a4a5cfc36a6097c9d8c224887a435216f2e01?apiKey=5fa524da69784606825bdce1461219fa&width=200 200w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/d5a6d3ffd80300051e7685ae3f6a4a5cfc36a6097c9d8c224887a435216f2e01?apiKey=5fa524da69784606825bdce1461219fa&width=400 400w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/d5a6d3ffd80300051e7685ae3f6a4a5cfc36a6097c9d8c224887a435216f2e01?apiKey=5fa524da69784606825bdce1461219fa&width=800 800w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/d5a6d3ffd80300051e7685ae3f6a4a5cfc36a6097c9d8c224887a435216f2e01?apiKey=5fa524da69784606825bdce1461219fa&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/d5a6d3ffd80300051e7685ae3f6a4a5cfc36a6097c9d8c224887a435216f2e01?apiKey=5fa524da69784606825bdce1461219fa&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/d5a6d3ffd80300051e7685ae3f6a4a5cfc36a6097c9d8c224887a435216f2e01?apiKey=5fa524da69784606825bdce1461219fa&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/d5a6d3ffd80300051e7685ae3f6a4a5cfc36a6097c9d8c224887a435216f2e01?apiKey=5fa524da69784606825bdce1461219fa&"
-                className="object-contain shrink-0 w-12 rounded-full aspect-square"
-              />
-              <div className="flex flex-col">
-                <div className="text-base font-medium tracking-tight text-white">
-                  Wade Warren
-                </div>
-                <div className="text-xs leading-loose text-zinc-400">
-                  Web Designer
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col grow shrink items-start px-6 py-12 bg-zinc-800 bg-opacity-20 min-w-[240px] rounded-[32px] w-[314px] max-md:px-5">
-            <div className="flex gap-2.5 items-center p-4 w-14 h-14 bg-gray-700 rounded-[56px]">
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/79aa8438ba3bae8eaac06f438702c2bdf465c0c54a9e84593d9328f9737dccad?apiKey=5fa524da69784606825bdce1461219fa&"
-                className="object-contain w-6 aspect-square"
-              />
-            </div>
-            <div className="self-stretch mt-8 text-base leading-6 text-white">
-              &quot;I am really satisfied with it. I'm good to go. It really
-              saves me time and effort. It's is exactly what our business has
-              been lacking. &quot;
-            </div>
-            <div className="flex gap-2 justify-center items-start mt-8">
-              <img
-                loading="lazy"
-                srcSet="https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/7585225c0b9e5c9d9bf683a1c91c9ba9413d639758a5967cdbfef1af78693ff6?apiKey=5fa524da69784606825bdce1461219fa&width=100 100w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/7585225c0b9e5c9d9bf683a1c91c9ba9413d639758a5967cdbfef1af78693ff6?apiKey=5fa524da69784606825bdce1461219fa&width=200 200w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/7585225c0b9e5c9d9bf683a1c91c9ba9413d639758a5967cdbfef1af78693ff6?apiKey=5fa524da69784606825bdce1461219fa&width=400 400w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/7585225c0b9e5c9d9bf683a1c91c9ba9413d639758a5967cdbfef1af78693ff6?apiKey=5fa524da69784606825bdce1461219fa&width=800 800w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/7585225c0b9e5c9d9bf683a1c91c9ba9413d639758a5967cdbfef1af78693ff6?apiKey=5fa524da69784606825bdce1461219fa&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/7585225c0b9e5c9d9bf683a1c91c9ba9413d639758a5967cdbfef1af78693ff6?apiKey=5fa524da69784606825bdce1461219fa&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/7585225c0b9e5c9d9bf683a1c91c9ba9413d639758a5967cdbfef1af78693ff6?apiKey=5fa524da69784606825bdce1461219fa&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/5fa524da69784606825bdce1461219fa/7585225c0b9e5c9d9bf683a1c91c9ba9413d639758a5967cdbfef1af78693ff6?apiKey=5fa524da69784606825bdce1461219fa&"
-                className="object-contain shrink-0 w-12 rounded-full aspect-square"
-              />
-              <div className="flex flex-col">
-                <div className="text-base font-medium tracking-tight text-white">
-                  Jenny Wilson
-                </div>
-                <div className="text-xs leading-loose text-zinc-400">
-                  Trust Administrator
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
+        <Testimonial />
 
         <FAQs />
 
