@@ -48,9 +48,9 @@ const FAQs = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-      <div className="flex flex-col pb-4 py-4 w-full border-b-2 border-zinc-400 max-md:max-w-full">
+      <div className="flex flex-col pb-4 py-4 w-full border-b-2 border-zinc-400 max-md:max-w-full transform hover:scale-105 transition-transform duration-700">
         <div
-          className="flex flex-wrap gap-10 justify-between items-center w-full text-2xl font-bold leading-none text-white cursor-pointer"
+          className="flex flex-row gap-10 justify-between items-center w-full font-bold leading-none text-white cursor-pointer"
           onClick={() => setIsOpen(!isOpen)}
         >
           <div className="self-stretch my-auto max-md:max-w-full">
@@ -71,10 +71,10 @@ const FAQs = () => {
     );
   };
   return (
-    <div className="flex flex-col items-center mt-32 max-w-full w-[1020px] max-md:mt-10">
+    <div className="flex flex-col items-center mt-32 px-4 w-full max-md:mt-10">
       <div className="text-4xl font-bold text-white mb-16">FAQs</div>
 
-      <AnimatePresence>
+      
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -86,7 +86,6 @@ const FAQs = () => {
             <FAQItem key={index} question={faq.question} answer={faq.answer} />
           ))}
         </motion.div>
-      </AnimatePresence>
     </div>
   );
 };

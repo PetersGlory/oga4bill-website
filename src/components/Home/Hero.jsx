@@ -39,12 +39,12 @@ const Hero = () => {
             />
           </div>
           <div className="flex flex-col grow shrink items-start min-w-[240px] w-[483px] max-md:max-w-full">
-            <div className="flex flex-col items-end px-20 pt-12 max-w-full rounded-none w-[793px] max-md:pl-5">
+            <div className="flex flex-col items-end px-20 md:pt-12 max-w-full rounded-none w-[793px] max-md:pl-5">
               <div className="flex shrink-0 max-w-full bg-green-600 rounded-full" />
                 <img
                 loading="lazy"
                 src="/assets/img/home.png"
-                className="object-contain h-[492px] w-[419px]"
+                className="object-contain h-[492px] w-[419px] transform hover:scale-105 transition-transform duration-700"
                 />
             </div>
           </div>
