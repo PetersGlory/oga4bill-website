@@ -2,6 +2,7 @@
 
 import { Menu, X } from "lucide-react";
 import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,16 +40,18 @@ const Navbar = () => {
             />
           </div>
           <div className="hidden md:flex gap-6">
-          <div className="flex gap-8 justify-center items-center self-stretch my-auto text-base font-medium text-white min-w-[240px] max-md:max-w-full">
-            <div className="self-stretch my-auto">Why Us</div>
-            <div className="self-stretch my-auto">Services</div>
-            <div className="self-stretch my-auto">Our Process</div>
-            <div className="self-stretch my-auto">Payments</div>
-            <div className="self-stretch my-auto">FAQs</div>
-          </div>
-          <div className="gap-2.5 self-stretch px-8 py-3 my-auto text-base font-bold text-green-600 border-2 border-green-600 border-solid rounded-[64px] max-md:px-5">
-            Download Now
-          </div>
+            <div className="flex gap-8 justify-center items-center self-stretch my-auto text-base font-medium text-white min-w-[240px] max-md:max-w-full">
+              <div className="self-stretch my-auto">Why Us</div>
+              <div className="self-stretch my-auto">Services</div>
+              <div className="self-stretch my-auto">Our Process</div>
+              <div className="self-stretch my-auto">Payments</div>
+              <div className="self-stretch my-auto">FAQs</div>
+            </div>
+            <motion.button>
+              <div className="gap-2.5 self-stretch px-8 py-3 my-auto text-base font-bold text-green-600 border-2 border-green-600 border-solid rounded-[64px] max-md:px-5">
+                Download Now
+              </div>
+            </motion.button>
           </div>
 
           <button
@@ -104,17 +107,19 @@ const Navbar = () => {
               >
                 Process
               </button>
-              
+
               <button
                 onClick={() => scrollToSection("contact")}
                 className="text-left text-gray-200 hover:text-amber-400 transition-colors"
               >
                 FAQs
               </button>
-              
+
+              <motion.button>
                 <div className="gap-2.5 text-center self-stretch px-8 py-3 my-auto text-base font-bold text-green-600 border-2 border-green-600 border-solid rounded-[64px] max-md:px-5">
                   Download Now
                 </div>
+              </motion.button>
             </div>
           </div>
         </div>

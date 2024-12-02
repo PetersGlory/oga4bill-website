@@ -43,8 +43,8 @@ const Hero = () => {
               <div className="flex shrink-0 max-w-full bg-green-600 rounded-full" />
                 <img
                 loading="lazy"
-                src="/assets/img/home.png"
-                className="object-contain h-[492px] w-[419px] transform hover:scale-105 transition-transform duration-700"
+                src="/assets/img/Home.png"
+                className="object-contain h-[492px] w-full md:w-[419px] transform hover:scale-105 transition-transform duration-700"
                 />
             </div>
           </div>

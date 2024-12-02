@@ -48,7 +48,7 @@ const FAQs = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-      <div className="flex flex-col pb-4 py-4 w-full border-b-2 border-zinc-400 max-md:max-w-full transform hover:scale-105 transition-transform duration-700">
+      <div className="flex flex-col pb-4 py-4 w-full border-b-2 border-zinc-400 max-md:max-w-full transform hover:scale-50 transition-transform duration-700">
         <div
           className="flex flex-row gap-10 justify-between items-center w-full font-bold leading-none text-white cursor-pointer"
           onClick={() => setIsOpen(!isOpen)}

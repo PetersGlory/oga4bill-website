@@ -35,7 +35,7 @@ const FirstSection = () => {
               <div className="flex smx-auto max-w-full py-4 px-8 bg-white items-center justify-center bg-opacity-10 h-[492px] rounded-[37px] w-[643px]">
                 <img
                     loading="lazy"
-                    src="/assets/img/services.png"
+                    src="/assets/img/service.png"
                     className="object-contain h-[492px] w-[419px] transform hover:scale-105 transition-transform duration-700"
                     />
               </div>

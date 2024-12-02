@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Testimonial = () => {
   return (
     <>
-        
-
-        <div className="flex flex-wrap gap-8 justify-center items-start mt-32 max-w-full w-[1240px] max-md:mt-10">
+      <div className="py-16 w-full flex flex-col items-center justify-center gap-8">
+        <div className="text-4xl font-bold text-white">Testimonials</div>
+        <div className="flex flex-wrap gap-8 justify-center gap-4 items-start w-full px-4 max-md:mt-10">
           <div className="flex flex-col grow shrink items-start px-6 py-12 bg-zinc-800 bg-opacity-20 min-w-[240px] rounded-[32px] w-[314px] max-md:px-5">
             <div className="flex gap-2.5 items-center p-4 w-14 h-14 bg-gray-700 rounded-[56px]">
               <img
@@ -30,7 +30,7 @@ const Testimonial = () => {
                   Hadid Khan
                 </div>
                 <div className="text-xs leading-loose text-zinc-400">
-                  UIUX Designer
+                  Happy User
                 </div>
               </div>
             </div>
@@ -59,7 +59,7 @@ const Testimonial = () => {
                   Wade Warren
                 </div>
                 <div className="text-xs leading-loose text-zinc-400">
-                  Web Designer
+                  Partners
                 </div>
               </div>
             </div>
@@ -88,15 +88,15 @@ const Testimonial = () => {
                   Jenny Wilson
                 </div>
                 <div className="text-xs leading-loose text-zinc-400">
-                  Trust Administrator
+                  Happy User
                 </div>
               </div>
             </div>
           </div>
         </div>
-
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Testimonial
+export default Testimonial;
