@@ -1,7 +1,8 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import { Metadata } from 'next'
-
+import { ThemeProvider, useTheme } from "@/context/ThemeContext";
+// import { ThemeProvider } from '../context/ThemeContext';
 
 export const metadata = {
   icons: {
@@ -24,12 +25,12 @@ const geistMono = localFont({
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
-    </html>
+    <ThemeProvider>
+      <html lang="en">
+        <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+          {children}
+        </body>
+      </html>
+    </ThemeProvider>
   );
 }

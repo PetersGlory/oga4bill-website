@@ -1,8 +1,13 @@
+"use client"
+
 import Link from "next/link";
 import { Facebook, Twitter, Instagram, Linkedin, Youtube } from "lucide-react";
 import React from "react";
+import { useTheme } from '@/context/ThemeContext'; // Import the useTheme hook
 
 const Footer = () => {
+  const { isDarkMode } = useTheme(); // Get theme state
+
   const socialLinks = [
     {
       icon: Facebook,
@@ -32,7 +37,7 @@ const Footer = () => {
   ];
   return (
     <>
-      <div className="flex flex-col mt-32 w-full max-md:mt-10 max-md:max-w-full">
+      <div className={`flex flex-col mt-32 w-full max-md:mt-10 max-md:max-w-full ${isDarkMode ? 'text-white' : 'bg-gray-900 bg-opacity-80 text-black'}`}>
         <div className="self-center w-full max-w-[1240px] max-md:max-w-full">
           <div className="flex gap-5 max-md:flex-col">
             <div className="flex flex-col w-[67%] max-md:ml-0 max-md:w-full">

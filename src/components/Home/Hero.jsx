@@ -1,17 +1,22 @@
+"use client"
+
 import React from 'react'
+import { useTheme } from '@/context/ThemeContext'; // Import the useTheme hook
 
 const Hero = () => {
+  const { isDarkMode } = useTheme(); // Get theme state
+
   return (
     <>
-        <div className="flex flex-wrap gap-8 items-center mt-12 max-w-full w-full max-md:mt-10 px-4">
+        <div className={`flex flex-wrap gap-8 items-center mt-12 max-w-full w-full max-md:mt-10 px-4 ${isDarkMode ? 'text-white' : 'bg-white text-black'}`}>
           <div className="flex relative flex-col grow shrink items-start min-w-[240px] w-[43%] max-md:max-w-full">
-            <div className="z-0 self-stretch text-6xl font-bold tracking-tighter text-white leading-[64px] max-md:max-w-full max-md:text-4xl max-md:leading-[51px]">
+            <div className="z-0 self-stretch text-6xl font-bold tracking-tighter leading-[64px] max-md:max-w-full max-md:text-4xl max-md:leading-[51px]">
               Unlocking the unlimited possibilities in bill payments
             </div>
             <div className="z-0 self-stretch mt-8 text-lg leading-6 text-zinc-400 max-md:max-w-full">
               Unlock financial possibilities the best way ever to make bills payment and transfers with ease using Oga4bill.
             </div>
-            <div className="flex z-0 gap-4 items-center px-8 py-4 mt-8 text-base font-medium text-white bg-green-600 rounded-[64px] max-md:px-5">
+            <div className="flex z-0 gap-4 items-center px-8 py-4 mt-8 text-white text-base font-medium bg-green-600 rounded-[64px] max-md:px-5">
               <div className="self-stretch my-auto">Get Started</div>
               <img
                 loading="lazy"
@@ -26,7 +31,7 @@ const Hero = () => {
                 className="object-contain shrink-0 gap-0 self-stretch my-auto aspect-[2.5] w-[120px]"
               />
               <div className="flex flex-col self-stretch my-auto w-[177px]">
-                <div className="text-base font-bold text-white">10.2k+</div>
+                <div className="text-base font-bold">10.2k+</div>
                 <div className="text-xs leading-4 text-zinc-400">
                   Active users around the wordls
                 </div>
@@ -39,7 +44,7 @@ const Hero = () => {
             />
           </div>
           <div className="flex flex-col grow shrink items-start min-w-[240px] w-[483px] max-md:max-w-full">
-            <div className="flex flex-col items-end px-20 md:pt-12 max-w-full rounded-none w-[793px] max-md:pl-5">
+            <div className={`flex flex-col items-end px-20 md:pt-12 bg-green-600 max-w-full ${isDarkMode && "bg-opacity-20"} rounded-[60px] w-[793px] max-md:pl-5`}>
               <div className="flex shrink-0 max-w-full bg-green-600 rounded-full" />
                 <img
                 loading="lazy"
