@@ -78,7 +78,7 @@ const FAQs = () => {
     );
   };
   return (
-    <div className={`flex flex-col items-center mt-32 px-4 w-full max-md:mt-10 ${isDarkMode ? 'text-white' : 'bg-white text-gray-900'}`}>
+    <div id="faqs" className={`flex flex-col items-center mt-32 px-4 w-full max-md:mt-10 ${isDarkMode ? 'text-white' : 'bg-white text-gray-900'}`}>
       <div className="text-4xl font-bold mb-16">FAQs</div>
 
       

@@ -49,7 +49,7 @@ const Navbar = () => {
           </div>
           <div className="hidden md:flex gap-6">
             <div className="flex gap-8 justify-center items-center self-stretch my-auto text-base font-medium min-w-[240px] max-md:max-w-full">
-              <div className="self-stretch my-auto toggle-theme">Why Us</div>
+              <a href="#second" className="self-stretch my-auto toggle-theme">Why Us</a>
               <div className="self-stretch my-auto toggle-theme">Services</div>
               <div className="self-stretch my-auto toggle-theme">
                 Our Process
@@ -126,7 +126,7 @@ const Navbar = () => {
               </button>
 
               <button
-                onClick={() => scrollToSection("contact")}
+                onClick={() => scrollToSection("faqs")}
                 className="text-left hover:text-amber-400 transition-colors"
               >
                 FAQs

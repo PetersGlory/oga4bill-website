@@ -7,7 +7,7 @@ const SecondSection = () => {
   const { isDarkMode } = useTheme(); // Get theme state
 
   return (
-    <div className={`flex flex-col mt-32 max-w-full w-full px-4 max-md:mt-10 ${isDarkMode ? 'text-white' : 'bg-white text-gray-900'}`}>
+    <div id="second" className={`flex flex-col mt-32 max-w-full w-full px-4 max-md:mt-10 ${isDarkMode ? 'text-white' : 'bg-white text-gray-900'}`}>
       <div className="flex flex-wrap gap-8 justify-center items-center w-full">
         <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
           <div className={`flex smx-auto max-w-full py-4 ${isDarkMode ? "bg-white" : "bg-green-600"} items-center justify-center bg-opacity-10 h-[492px] rounded-[37px] w-[643px]`}>
